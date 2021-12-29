@@ -30,7 +30,7 @@ header .container{
 
 header #logo{
     color: var(--vermelho);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
 }
 
@@ -149,7 +149,7 @@ main #lancamento .descricao{
     width: calc(100% - 22px);
     font-weight: bolder;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     text-align: center;
     top: calc(50% - 13.5px);
@@ -160,13 +160,37 @@ main #lancamento .descricao{
 
 .owl-item.active:hover{
     position: relative;
-    transform: scale(1.25);
+    left: 0;
+    transform: scale(1.6);
     z-index: 5;
+}
+
+.owl-item.active:hover > figure{
+    background-color: black;
+}
+.owl-item.active:hover > figure > .opcao{
+    opacity: 0.4;
+}
+
+.catalogo .owl-stage .active{
+    transform-origin: bottom left;
+}
+
+.catalogo .owl-stage .active ~ .active{
+    transform-origin: bottom center;
+}
+
+.catalogo .owl-stage > .active ~ .active ~ .active ~ .active ~ .active ~ .active {
+    transform-origin: bottom right;
 }
 
 .owl-item.active,
 .owl-loaded, .owl-theme, .owl-drag, .owl-carousel, #series > div{
     z-index: 0;
+}
+
+.owl-stage-outer{
+    overflow: visible !important;
 }
 
 .owl-theme,

@@ -114,3 +114,38 @@
         height: 40vh;
     }
 }
+
+/*Responsive para o Carrossel hover*/
+
+@media (max-width: 1000px) {
+    .catalogo .owl-stage > .active ~ .active ~ .active ~ .active ~ .active ~ .active {
+        transform-origin: none;
+    }
+
+    .catalogo .owl-stage > .active ~ .active ~ .active ~ .active ~ .active {
+        transform-origin: bottom right;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    .catalogo .owl-stage > .active ~ .active ~ .active ~ .active ~ .active {
+        transform-origin: none;
+    }
+
+    .catalogo .owl-stage > .active ~ .active ~ .active {
+        transform-origin: bottom right;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .catalogo .owl-stage > .active ~ .active ~ .active ~ .active {
+        transform-origin: none;
+    }
+
+    .catalogo .owl-stage > .active ~ .active ~ .active {
+        transform-origin: bottom right;
+    }
+    
+}
