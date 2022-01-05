@@ -75,8 +75,8 @@ main #lancamento .descricao{
 #lancamento .descricao h3,
 #lancamento .descricao p,
 #lancamento .descricao .botoes{
-    margin-top: 2%;
-    margin-left: 4%;
+    margin-top: 1%;
+    margin-left: 3%;
 }
 
 .titulo{
@@ -139,12 +139,15 @@ main #lancamento .descricao{
     transition: 0.3s all;
 }
 
-/* .catalogo .owl-theme .item .opcao:hover{
-    transform: scale(1.05);
-} */
+.catalogo .owl-theme .item{
+    border-radius: 10px;
+    padding: 0;
+    z-index: 5;
+    transition: 0.3s all;
+}
 
 /* -------------------------------------------------------------------- */
-#generos .item figcaption{
+.catalogo .item figcaption{
     display: inline-block;
     width: calc(100% - 22px);
     font-weight: bolder;
@@ -153,8 +156,9 @@ main #lancamento .descricao{
     position: absolute;
     text-align: center;
     top: calc(50% - 13.5px);
-} */
-#generos .item figcaption:hover{
+}
+
+.catalogo .item figcaption:hover{
     opacity: rgba(0, 0, 0, 0.5);
 }
 
@@ -191,8 +195,8 @@ main #lancamento .descricao{
 
 .owl-stage-outer{
     display: block;
-    overflow-x: hidden;
-    overflow-y: initial;
+    overflow: initial;
+    /* overflow-y: visible; */
     /* overflow: visible !important; */
     height: 100%;
 }
@@ -208,6 +212,6 @@ main #lancamento .descricao{
     z-index: -1;
 }
 
-body{
-    overflow-x: hidden !important;
+main{
+    overflow: hidden !important;
 }
