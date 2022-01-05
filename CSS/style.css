@@ -190,9 +190,17 @@ main #lancamento .descricao{
 }
 
 .owl-stage-outer{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: initial;
+    /* overflow: visible !important; */
+    height: 100%;
+}
+
+/* .owl-stage{
     overflow: visible !important;
     overflow-x: hidden !important;
-}
+} */
 
 .owl-theme,
 .owl-carousel{
