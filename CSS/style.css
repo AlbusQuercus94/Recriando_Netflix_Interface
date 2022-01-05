@@ -103,7 +103,8 @@ main #lancamento .descricao{
     cursor: pointer;
 }
 
-#lancamento .descricao .botoes button:hover{
+#lancamento .descricao .botoes button:hover,
+#lancamento .descricao .botoes button:focus{
     color: var(--preto);
     transform: scale(1.05);
     border: var(--preto) solid 1px;
@@ -142,7 +143,6 @@ main #lancamento .descricao{
     border-radius: 10px;
     padding: 0;
     z-index: 5;
-    transition: 1s all;
 }
 
 /* -------------------------------------------------------------------- */
@@ -161,7 +161,12 @@ main #lancamento .descricao{
     opacity: rgba(0, 0, 0, 0.5);
 }
 
-.owl-item.active:hover{
+.owl-item.active{
+    transition: 0.3s all;
+}
+
+.owl-item.active:hover,
+.owl-item.active:focus{
     position: relative;
     left: 0;
     transform: scale(1.6);
