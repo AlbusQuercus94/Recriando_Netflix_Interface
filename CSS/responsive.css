@@ -31,7 +31,10 @@
     #generos .item figcaption{
         font-size: large;
     }
-
+    
+body{
+    overflow-x: hidden;
+}
 }
 
 @media (max-width: 600px) {
@@ -67,7 +70,11 @@
     #lancamento .descricao .botoes{
     margin-top: 0%;
     margin-bottom: 0%;
-}
+    }
+    
+body{
+    overflow-x: hidden;
+}    
 }
 
 @media (min-width: 715px) {
@@ -90,6 +97,10 @@
         content: "Saiba Mais";
         color: var(--texto);
     }
+    
+body{
+    overflow-x: hidden;
+}
 }
 
 @media (max-height: 600px){
@@ -106,13 +117,20 @@
         height: 0;
         margin: 0;
     }
-
+    
+body{
+    overflow-x: hidden;
+}
 }
 
 @media (max-height: 500px){
     main #lancamento .descricao{
         height: 40vh;
     }
+    
+body{
+    overflow-x: hidden;
+}
 }
 
 /*Responsive para o Carrossel hover*/
