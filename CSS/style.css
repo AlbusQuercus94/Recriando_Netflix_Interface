@@ -136,14 +136,13 @@ main #lancamento .descricao{
     border-radius: 10px;
     border: var(--textosobre) solid 1px;
     z-index: 5;
-    transition: 0.3s all;
 }
 
 .catalogo .owl-theme .item{
     border-radius: 10px;
     padding: 0;
     z-index: 5;
-    transition: 0.3s all;
+    transition: 1s all;
 }
 
 /* -------------------------------------------------------------------- */
