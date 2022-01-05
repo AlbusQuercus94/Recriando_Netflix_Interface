@@ -191,6 +191,7 @@ main #lancamento .descricao{
 
 .owl-stage-outer{
     overflow: visible !important;
+    overflow-x: hidden !important;
 }
 
 .owl-theme,
@@ -200,5 +201,5 @@ main #lancamento .descricao{
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
