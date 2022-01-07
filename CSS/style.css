@@ -214,8 +214,10 @@ main #lancamento .descricao{
 .owl-carousel{
     position: relative;
     z-index: -1;
+    margin-right: 2%;
 }
 
 main{
     overflow: hidden !important;
+    margin: 0.5%;
 }
