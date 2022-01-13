@@ -193,7 +193,7 @@ main #lancamento .descricao{
 }
 
 .owl-item.active,
-.owl-loaded, .owl-theme, .owl-drag, .owl-carousel, #series > div{
+.owl-loaded, .owl-theme, .owl-drag, .owl-carousel, .catalogo > div{
     z-index: 0;
 }
 
@@ -213,7 +213,7 @@ main #lancamento .descricao{
 .owl-theme,
 .owl-carousel{
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     margin-right: 2%;
 }
 
